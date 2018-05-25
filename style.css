@@ -66,19 +66,20 @@ html {
 
 .button {
     margin-top: 80px;
-    /* border: 2px solid white; */
+    border: 1px solid white;
     border-radius: 30px;
+		font-size: 20px;
     background-color: Transparent;
 		color: white;
     padding: 15px 30px;
     text-align: center;
-    font-size: 16px;
     position: absolute;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
 		transition: 0.8s;
 		cursor: pointer;
+		text-decoration: none;
 }
 
 .button:hover {
