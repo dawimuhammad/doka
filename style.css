@@ -1,0 +1,134 @@
+html {
+		background-size: cover;
+		height: 100%;
+		overflow: hidden;
+		font-family: "Bebas Neue";
+		color: white;
+		text-align: center;
+		overflow: scroll;
+}
+
+.homepage {
+    background-image: url("img/boris-stefanik-189213-unsplash-1.jpg");
+}
+
+.dashboard {
+    background-image: url("/Users/dawimuhammad/hacktiv8/doka/img/dashboard-background.png");
+}
+
+.doka-logo {
+		margin: 5px;
+		margin-bottom: 0px;
+}
+
+.doka-logo h1 {
+		font-size: 60px;
+}
+
+.container-down {
+		/* border: 1px solid white; */
+		margin-top: 35px;
+		display: block;
+		height: 300px;
+		padding: 20px;
+}
+
+.car-container-splice {
+		display: inline-block;
+		width: 30%;
+		height: 300px;
+		/* border: 1px solid blue; */
+		float: left;
+		margin: 0px 20px;
+}
+
+.car-container-splice img {
+	width: 300px;
+	height: 300px;
+}
+
+.left {
+		margin-left: 50px;
+}
+
+.center {
+		width: 370px;
+		text-align: left;
+}
+
+.divider {
+		width: auto;
+}
+
+.right {
+		float: right;
+}
+
+.button {
+    margin-top: 80px;
+    /* border: 2px solid white; */
+    border-radius: 30px;
+    background-color: Transparent;
+		color: white;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+		transition: 0.8s;
+		cursor: pointer;
+}
+
+.button:hover {
+    /* border: 2px solid white; */
+    background-color: white;
+    color: #273043;
+}
+
+.footer {
+	  font-family: 'Helvetica Neue Thin';
+	  font-style: italic;
+	  font-size: 13px;
+	  position: fixed;
+	  left: 0;
+	  bottom: 0;
+	  width: 100%;
+	  opacity: 0.5;
+	  text-align: center;
+	  margin-bottom: 10px;
+}
+
+#sub-logo {
+    font-family: 'Helvetica Neue';
+    font-style: italic;
+    font-size: 15px;
+}
+
+#health-status {
+		/* border: 1px solid yellow; */
+}
+
+#health-status-img img {
+		width: 125px;
+		height: 125px;
+}
+
+#health-status-img {
+		/* border: 1px solid white; */
+		margin-top: 5px;
+}
+
+#home-logo {
+		margin-top: 320px;
+}
+
+#dashboard-logo {
+		margin-top: 50px;
+		font-size: 50px;
+}
+
+#sub-logo {
+		margin-top: 0px;
+}
