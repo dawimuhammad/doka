@@ -44,7 +44,7 @@ function  vehicleFormSubmit() {
             lastOilChangeKM = logKilo;
         }
 
-        lastOilChange.innerHTML = 'KM + 'lastOilChangeKM;
+        lastOilChange.innerHTML = 'KM ' + lastOilChangeKM;
 
         // lastOilChange.innerHTML =
 
