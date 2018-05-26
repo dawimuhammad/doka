@@ -1,34 +1,60 @@
 <!DOCTYPE HTML>
 <html class="dashboard">
   <head>
-    <!-- <script src="main.js"></script> -->
+    <script src="main.js"></script>
 	<title>doka - dashboard</title>
     <link href="style.css" rel="stylesheet"/>
   </head>
   <body>
     <!-- logo/ title header -->
-    <div class="doka-logo" id='dashboard-logo'>
-        <h1>doka</h1>
+    <div class="doka-logo dashboard-logo">
+        <!-- link for going online -->
+        <!-- <h1><a href="/index.html">doka</a></h1> -->
+        <!-- link for local use -->
+        <h1><a href="/Users/dawimuhammad/hacktiv8/doka/index.html">doka</a></h1>
+        <h3>Record your vehicle service and oil change</h3>
     </div>
     <!-- Car Display -->
-    <div class='container-down'>
+    <div class='container-down top'>
         <!-- Car Image -->
         <div class="car-container-splice left">
-          <img src="img/truck.png">
+        </br>
+          <!-- online use -->
+          <!-- <img src="/img/jazz-yellow.png"> -->
+          <!-- local use -->
+          <img src="/Users/dawimuhammad/hacktiv8/doka/img/jazz-yellow.png">
 
         </div>
         <!-- Car Information -->
         <div class="car-container-splice center">
-            <h1 style="text-align: center; font-size: 26px">Vehicle Data</h1>
+            <h1 class="sub-title-box">Vehicle Data</h1>
             <br/>
-            <h2>Brand</h2>
-            <h2>Type</h2>
-            <h2>Year</h2>
-            <h2>Kilometres</h2>
+            <table class="vehicle-data">
+                <tr>
+                    <td>Brand</td>
+                    <td class="row-center">Honda</td>
+                </tr>
+                <tr>
+                    <td>Type</td>
+                    <td class="row-center">All New Jazz RS</td>
+                </tr>
+                <tr>
+                    <td>Year</td>
+                    <td class="row-center">2017</td>
+                </tr>
+                <tr>
+                    <td>Kilometres</td>
+                    <td id="vehicle-last-kilometre" class="row-center">0 KM</td>
+                </tr>
+                <tr>
+                    <td>Your Last Oil Change on</td>
+                    <td id="vehicle-last-oilchange" class="row-center"></td>
+                </tr>
+            </table>
         </div>
         <!-- Vehicle Health Status -->
         <div class="car-container-splice right">
-            <h1 style="text-align: center; font-size: 25px">Health Status</h1>
+            <h1 class="sub-title-box">Health Status</h1>
             <br/>
             <div id="health-status-img">
                 <img src="img/blue-dot.png">
@@ -36,13 +62,86 @@
             <div id="health-status">
                 <h2>GOOD</h2>
             </div>
-            <div></div>
+            <div id="last-service-vehicle">
+            </div>
         </div>
     </div>
     <!-- Service Log -->
     <div class="container-down">
-
+        <h1 class="sub-title-box">Vehicle Log</h1>
+        <table id="vehicle-table-data" class="log-table">
+            <tr style="border-bottom: 1px solid white">
+                <th style="width: 75px;">No</th>
+                <th>Date</th>
+                <th>Kilometres</th>
+                <th>Service Type</th>
+            </tr>
+        </table>
     </div>
     <!-- Form Input -->
+    <div class="container-down">
+        <h1 class="sub-title-box">Submit Log</h1>
+        <br/>
+        <div class="container-form">
+            <form id="vehicle-data-form">
+                <!-- row date -->
+                <div class="form-row">
+                    <div class="col-25">
+                        <label for="vehicle-service-date">Service Date</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="date" id="vehicle-service-date" name="service-date" placeholder="Select service date ..">
+                    </div>
+                </div>
+                <!-- row Kilometres -->
+                <div class="form-row">
+                    <div class="col-25">
+                        <label for="vehicle-service-kilo">Kilometres</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="vehicle-service-kilo" name="service-kilo" placeholder="Current kilometers as service on going ..">
+                    </div>
+                </div>
+                <!-- row service type -->
+                <div class="form-row">
+                    <div class="col-25">
+                        <label for="vehicle-service-type">Type of Services</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="vehicle-service-type" name="service-type">
+                            <option></option>
+                            <option value="service-scheduled">Scheduled Service</option>
+                            <option value="change-oil">Change Oil</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- row submit -->
+                <div class="form-row">
+                    <input type="button" value="Submit" onclick="vehicleFormSubmit()">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="dashboard-footer">
+        <h3> Muhamad Haddawi - 2018 </h3>
+    </div>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  -->
+
+<!--  -->
+
+<!--  -->

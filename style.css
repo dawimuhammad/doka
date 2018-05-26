@@ -9,11 +9,22 @@ html {
 }
 
 .homepage {
-    background-image: url("img/boris-stefanik-189213-unsplash-1.jpg");
+		/* online */
+    /* background-image: url("/img/boris-stefanik-189213-unsplash-1.jpg"); */
+		/* local use */
+		background-image: url("/Users/dawimuhammad/hacktiv8/doka/img/boris-stefanik-189213-unsplash-1.jpg");
 }
 
 .dashboard {
-    background-image: url("/img/dashboard-background.png");
+		/* online */
+    /* background-image: url("/img/dashboard-background.png"); */
+		/* local use */
+		background-image: url("/Users/dawimuhammad/hacktiv8/doka/img/dashboard-background.png");
+}
+
+h1 a {
+	text-decoration: none;
+	color: white;
 }
 
 .doka-logo {
@@ -23,18 +34,36 @@ html {
 
 .doka-logo h1 {
 		font-size: 60px;
+		margin top: 20px;
+		margin-bottom: 0px;
+}
+
+.dashboard-logo {
+		padding: 0px;
 }
 
 .container-down {
+		overflow: auto;
 		/* border: 1px solid white; */
 		margin-top: 35px;
 		display: block;
-		height: 300px;
 		padding: 20px;
 }
 
+.top {
+		height: 400px;
+}
+
+.dashboard-footer {
+		left: 0;
+		width: 100%;
+		color: white;
+		height: 30px;
+		text-align: center;
+		margin: 0px;
+}
+
 .car-container-splice {
-		display: inline-block;
 		width: 30%;
 		height: 300px;
 		/* border: 1px solid blue; */
@@ -43,8 +72,9 @@ html {
 }
 
 .car-container-splice img {
-	width: 300px;
-	height: 300px;
+	width: auto;
+	height: 275px;
+	/* border: 1px solid white; */
 }
 
 .left {
@@ -52,7 +82,7 @@ html {
 }
 
 .center {
-		width: 370px;
+		width: 400px;
 		text-align: left;
 }
 
@@ -62,6 +92,11 @@ html {
 
 .right {
 		float: right;
+}
+
+.sub-title-box {
+		text-align: center;
+		font-size: 26px;
 }
 
 .button {
@@ -88,6 +123,52 @@ html {
     color: #273043;
 }
 
+.log-table {
+		width: 100%;
+		/* border: 1px solid green; */
+		padding: 10px;
+}
+
+.log-table th, td {
+		font-size: 20px;
+		padding: 15px 10px;
+		/* border: 1px solid white; */
+}
+
+.log-table th {
+		background-color: #6E8281;
+}
+
+.log-table tr:nth-child(odd) {
+		background-color: #9CBDC3;
+}
+
+.log-table tr {
+		background-color: #80AFB4;
+}
+
+.log-table tr:hover {
+		background-color: #F8C051;
+		opacity: 0.8;
+		color: black;
+}
+
+.vehicle-data {
+		/* border: 1px solid green; */
+		width: 100%;
+		padding: 10px 5px;
+		font-size: 22px;
+}
+
+.vehicle-data td {
+		padding: 13px 25px;
+		/* border: 1px solid yellow; */
+}
+
+.row-center {
+		text-align: center;
+}
+
 .footer {
 	  font-family: 'Helvetica Neue Thin';
 	  font-style: italic;
@@ -96,9 +177,85 @@ html {
 	  left: 0;
 	  bottom: 0;
 	  width: 100%;
-	  opacity: 0.5;
+	  opacity: 0.8;
 	  text-align: center;
 	  margin-bottom: 10px;
+}
+
+/* Form Style */
+
+* {
+    box-sizing: border-box;
+}
+
+.container-form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+		width: 50%;
+		height: 300px;
+		color: black;
+		position: relative;
+    left: 50%;
+		margin-top: 150px;
+		margin-bottom: 0px;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+input[type=text], select, input[type=date] {
+    width: 100%;
+    padding: 12px;
+		margin: 10px 0px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.form-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
 }
 
 #sub-logo {
@@ -118,18 +275,24 @@ html {
 
 #health-status-img {
 		/* border: 1px solid white; */
-		margin-top: 5px;
+		margin-top: 30px;
 }
 
 #home-logo {
 		margin-top: 320px;
 }
 
-#dashboard-logo {
-		margin-top: 50px;
-		font-size: 50px;
-}
-
 #sub-logo {
 		margin-top: 0px;
+}
+
+@media only screen and (max-width: 896px) {
+		.right {
+				float: left;
+		}
+
+		.car-container-splice {
+				border: 1px solid white;
+				margin: 10px 0px;
+		}
 }
