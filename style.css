@@ -10,14 +10,14 @@ html {
 
 .homepage {
 		/* online */
-    background-image: url("/img/boris-stefanik-189213-unsplash-1.jpg");
+    background-image: url("https://dawimuhammad.github.io/doka/img/boris-stefanik-189213-unsplash-1.jpg");
 		/* local use */
 		/* background-image: url("/Users/dawimuhammad/hacktiv8/doka/img/boris-stefanik-189213-unsplash-1.jpg"); */
 }
 
 .dashboard {
 		/* online */
-    background-image: url("/img/dashboard-background.png");
+    background-image: url("https://dawimuhammad.github.io/doka/img/dashboard-background.png");
 		/* local use */
 		/* background-image: url("/Users/dawimuhammad/hacktiv8/doka/img/dashboard-background.png"); */
 }
