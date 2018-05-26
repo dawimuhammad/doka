@@ -40,9 +40,7 @@ function  vehicleFormSubmit() {
 
         var lastOilChange = document.getElementById('vehicle-last-oilchange');
 
-        if (lastOilChangeKM === 0 && logServiceType === 'change-oil') {
-            lastOilChange = tanggalString;
-        } else if (lastOilChange !== 0 && logServiceType === 'change-oil') {
+        if (logServiceType === 'change-oil' && logKilo > lastOilChangeKM) {
             lastOilChange = tanggalString;
         }
 
